@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo funciona el tiempo en JS</title>
+</head>
+<body>
+        <script>
+            function hacerPrimeraCosa(){
+                var numero = 1
+                var numero2 = hacerSegundaCosa()
+
+                return numero + numero2
+            }
+            //var resultado = hacerPrimeraCosa()
+            //console.log(resultado)
+            function hacerSegundaCosa(){
+                var num2 = 3*2
+                return num2
+            }
+
+            function saludarParte1(){
+                intrusa()
+                console.log('Hola')
+            }
+            function saludarParte2(){
+                console.log('Mundo !')
+            }
+            function intrusa(){
+                console.log('PATATAA')
+            }
+            setTimeout(saludarParte2, 5000);
+            saludarParte1()
+        </script>
+</body>
+</html>
